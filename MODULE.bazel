@@ -2,4 +2,4 @@
 
 module(name="openscad_3d_objects", version="0.1")
 
-bazel_dep(name="openscad_rules", version="0.2")
+bazel_dep(name="openscad_rules", version="0.1")

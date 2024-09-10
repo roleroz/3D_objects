@@ -69,8 +69,8 @@
     "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/bazel_skylib/1.6.1/MODULE.bazel": "not found",
     "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/buildozer/7.1.2/MODULE.bazel": "not found",
     "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/googletest/1.11.0/MODULE.bazel": "not found",
-    "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/openscad_rules/0.2/MODULE.bazel": "8f735bd3fc4c7415c211c208ca01b0d553571fb62e79f49b1e6e7c8124a3ebe6",
-    "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/openscad_rules/0.2/source.json": "4e9709cb722406896b797df91f0c6f723841f46eb46517a2e52c19ac6d5e8485",
+    "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/openscad_rules/0.1/MODULE.bazel": "ec7cd7a89b7d2fd9ead292d0db7e611487a85e6355c9bd9d99bbe301c53c98b8",
+    "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/openscad_rules/0.1/source.json": "82de73cd3d014f12d5a22e48e3bd6a6616244eedff36462fdbed4ffab8fd98c2",
     "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/platforms/0.0.4/MODULE.bazel": "not found",
     "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/platforms/0.0.5/MODULE.bazel": "not found",
     "https://raw.githubusercontent.com/roleroz/bazel_registry/main/modules/platforms/0.0.6/MODULE.bazel": "not found",
@@ -102,6 +102,34 @@
   },
   "selectedYankedVersions": {},
   "moduleExtensions": {
+    "@@apple_support~//crosstool:setup.bzl%apple_cc_configure_extension": {
+      "general": {
+        "bzlTransitiveDigest": "PjIds3feoYE8SGbbIq2SFTZy3zmxeO2tQevJZNDo7iY=",
+        "usagesDigest": "aLmqbvowmHkkBPve05yyDNGN7oh7QE9kBADr3QIZTZs=",
+        "recordedFileInputs": {},
+        "recordedDirentsInputs": {},
+        "envVariables": {},
+        "generatedRepoSpecs": {
+          "local_config_apple_cc": {
+            "bzlFile": "@@apple_support~//crosstool:setup.bzl",
+            "ruleClassName": "_apple_cc_autoconf",
+            "attributes": {}
+          },
+          "local_config_apple_cc_toolchains": {
+            "bzlFile": "@@apple_support~//crosstool:setup.bzl",
+            "ruleClassName": "_apple_cc_autoconf_toolchains",
+            "attributes": {}
+          }
+        },
+        "recordedRepoMappingEntries": [
+          [
+            "apple_support~",
+            "bazel_tools",
+            "bazel_tools"
+          ]
+        ]
+      }
+    },
     "@@platforms//host:extension.bzl%host_platform": {
       "general": {
         "bzlTransitiveDigest": "xelQcPZH8+tmuOHVjL9vDxMnnQNMlwj0SlvgoqBkm4U=",
