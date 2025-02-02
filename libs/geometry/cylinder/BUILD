@@ -1,5 +1,5 @@
 load(
-    "@openscad_rules//:scad.bzl",
+    "@rules_openscad//:scad.bzl",
     "scad_library",
     "scad_object",
     "scad_test",
@@ -22,26 +22,6 @@ scad_test(
     library_under_test = ":cylinder_section",
     tests = {
         "testdata/cylinder_section/cylinder_section.stl": "CylinderSection(height=5,diameter=20,angle=45)",
-    },
-)
-
-scad_library(
-    name = "hardware",
-    srcs = ["hardware.scad"],
-    visibility = ["//visibility:public"],
-)
-
-scad_object(
-    name = "hardware_obj",
-    srcs = ["hardware_obj.scad"],
-    deps = [":hardware"],
-)
-
-scad_test(
-    name = "hardware_test",
-    library_under_test = ":hardware",
-    tests = {
-        "testdata/hardware/m2_nut.stl": "M2Nut(extra_thickness=1)",
     },
 )
 
