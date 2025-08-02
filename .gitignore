@@ -7,3 +7,5 @@ __pycache__
 \#auto_saved_files\#
 .pio
 *.lock
+.venv
+.envrc
