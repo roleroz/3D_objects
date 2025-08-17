@@ -37,7 +37,6 @@ box_size = pcb_size + [
     camera_height
 ];
 empty_size = box_size - [0, 2 * side_thickness, 0];
-echo (box_size);
 
 // Modules
 

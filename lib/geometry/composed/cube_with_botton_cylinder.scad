@@ -11,7 +11,6 @@ module CubeWithBottomCylinder(size) {
     assert(is_list(size), "size must be a list of 3 positive numbers");
     assert(len(size) == 3, "size must have 3 dimensions");
     for (i=[0:2]) {
-        echo(size[i]);
         assert(is_num(size[i]), " size must contain only numbers");
         assert(size[i] > 0, "All size dimensions must be greater than 0");
     }
