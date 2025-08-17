@@ -8,6 +8,33 @@ use <lib/geometry/cube/rounded_box.scad>
 
 $fn=50;
 
+<<<<<<< HEAD
+=======
+module SkadisShelfWithLip(
+    dimensions,
+    side_thickness,
+    bottom_thickness,
+    radius,
+    support_hole_size,
+    support_hole_distance_from_side) {
+
+    support_hole_distance_from_edge = (dimensions[0] % 40) / 2 + 20;
+    difference() {
+        RoundedBox(dimensions, side_thickness, bottom_thickness, radius);
+        translate([
+            support_hole_distance_from_edge - support_hole_size[0]/2,
+            support_hole_distance_from_side,
+            -0.1])
+            cube(support_hole_size + [0, 0, 0.1]);
+        translate([
+            dimensions[0] - support_hole_distance_from_edge - support_hole_size[0]/2,
+            support_hole_distance_from_side,
+            -0.1])
+            cube(support_hole_size + [0, 0, 0.1]);
+    }
+}
+
+>>>>>>> f931186 (Add shelf model for Ikea Skadis pegboard)
 // Set this variable to the size of the shelf needed. Below there are a few pre-measured cases for
 // some Lego technic car sets (with set number)
 
@@ -35,6 +62,7 @@ size=[280, 130];  // Koenigsegg Jesko 42173
 support_hole_size=[4.9, 90.4, 2.5];  // Wide shelfs
 // support_hole_size=[4.9, 60.4, 2.5];  // Narrow shelfs
 
+<<<<<<< HEAD
 module SkadisShelfWithLip(
     dimensions,
     side_thickness,
@@ -59,6 +87,8 @@ module SkadisShelfWithLip(
     }
 }
 
+=======
+>>>>>>> f931186 (Add shelf model for Ikea Skadis pegboard)
 SkadisShelfWithLip(
     dimensions=[size[0], size[1], 11],
     side_thickness=1.8,
