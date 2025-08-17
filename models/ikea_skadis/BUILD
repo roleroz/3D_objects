@@ -38,3 +38,11 @@ scad_object(
 #         "testdata/peg/multi_peg.stl": "SkadisMultiPeg(count=3)",
 #     },
 # )
+
+scad_object(
+    name = "shelf_with_lip",
+    srcs = ["shelf_with_lip.scad"],
+    deps = [
+        "//lib/geometry/cube:rounded_box",
+    ],
+)
