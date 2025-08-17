@@ -55,3 +55,12 @@ scad_object(
         "//lib/geometry/cube:rounded_box",
     ],
 )
+
+scad_object(
+    name = "straight_bracket",
+    srcs = ["straight_bracket.scad"],
+    deps = [
+        ":peg",
+        "//lib/geometry/triangle:right_triangle",
+    ],
+)
