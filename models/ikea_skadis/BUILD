@@ -5,6 +5,15 @@ load(
     # "scad_test",
 )
 
+scad_object(
+    name = "45_degree_bracket_with_truss",
+    srcs = ["45_degree_bracket_with_truss.scad"],
+    deps = [
+        ":peg",
+        "//lib/geometry/triangle:right_triangle",
+    ],
+)
+
 scad_library(
     name = "peg",
     srcs = ["peg.scad"],
