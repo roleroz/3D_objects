@@ -1,3 +1,5 @@
+// Mount for an HBV1825 camera module onto a 1515 extrusion
+
 use <lib/geometry/cube/rounded_cube.scad>
 
 $fn=50;
