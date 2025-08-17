@@ -7,3 +7,11 @@ scad_object(
         "//lib/geometry/cube:rounded_cube",
     ],
 )
+
+scad_object(
+    name = "U2C_mount",
+    srcs = ["U2C_mount.scad"],
+    deps = [
+        "//lib/operations:round",
+    ]
+)
