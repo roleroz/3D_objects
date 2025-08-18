@@ -3,7 +3,7 @@
 // You can set the number of pegs, the tenon lenght and distance from the pegboard
 
 use <lib/geometry/triangle/right_triangle.scad>
-use <models/ikea_skadis/peg.scad>
+use <ikea_skadis/peg.scad>
 
 $fn=50;
 

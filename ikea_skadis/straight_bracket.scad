@@ -3,7 +3,7 @@
 // You can set the length and distance to the wall of the tenon, as well as the height
 
 use <lib/geometry/triangle/right_triangle.scad>
-use <models/ikea_skadis/peg.scad>
+use <ikea_skadis/peg.scad>
 
 $fn=50;
 
