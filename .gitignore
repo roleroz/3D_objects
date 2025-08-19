@@ -8,4 +8,3 @@ __pycache__
 .pio
 *.lock
 .venv
-.envrc
