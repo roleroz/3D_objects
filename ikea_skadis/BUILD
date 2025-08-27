@@ -18,7 +18,7 @@ scad_library(
     name = "peg",
     srcs = ["peg.scad"],
     deps = [
-        "//lib/geometry/composed:cube_with_botton_cylinder"
+        "//lib/geometry/composed:cube_with_bottom_cylinder"
     ],
     visibility = ["//visibility:public"],
 )

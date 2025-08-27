@@ -6,19 +6,19 @@ load(
 )
 
 scad_library(
-    name = "cube_with_botton_cylinder",
-    srcs = ["cube_with_botton_cylinder.scad"],
+    name = "cube_with_bottom_cylinder",
+    srcs = ["cube_with_bottom_cylinder.scad"],
     visibility = ["//visibility:public"],
 )
 
 scad_object(
-    name = "cube_with_botton_cylinder_obj",
-    srcs = ["cube_with_botton_cylinder_obj.scad"],
-    deps = [":cube_with_botton_cylinder"],
+    name = "cube_with_bottom_cylinder_obj",
+    srcs = ["cube_with_bottom_cylinder_obj.scad"],
+    deps = [":cube_with_bottom_cylinder"],
 )
 
 scad_test(
-    name = "cube_with_botton_cylinder_test",
+    name = "cube_with_bottom_cylinder_test",
     assertions = [
         # Invalid size
         "CubeWithBottomCylinder(size=[-10,15,1.5])",
@@ -38,9 +38,9 @@ scad_test(
         # Not enough height for the bottom cylinder
         "CubeWithBottomCylinder(size=[20, 30, 5])",
     ],
-    library_under_test = ":cube_with_botton_cylinder",
+    library_under_test = ":cube_with_bottom_cylinder",
     tests = {
-        "testdata/cube_with_botton_cylinder/cube_with_bottom_cylinder.stl": "CubeWithBottomCylinder(size=[20, 30, 50]);",
-        "testdata/cube_with_botton_cylinder/too_thin_cube.stl": "CubeWithBottomCylinder(size=[20, 30, 25]);",
+        "testdata/cube_with_bottom_cylinder/cube_with_bottom_cylinder.stl": "CubeWithBottomCylinder(size=[20, 30, 50]);",
+        "testdata/cube_with_bottom_cylinder/too_thin_cube.stl": "CubeWithBottomCylinder(size=[20, 30, 25]);",
     },
 )

@@ -1,4 +1,4 @@
-use <lib/geometry/composed/cube_with_botton_cylinder.scad>
+use <lib/geometry/composed/cube_with_bottom_cylinder.scad>
 
 // Constants
 peg_width = 4.5;
