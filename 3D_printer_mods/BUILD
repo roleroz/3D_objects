@@ -18,3 +18,9 @@ scad_object(
         "//lib/geometry/cube:rounded_cube",
     ],
 )
+
+scad_object(
+    name = "polydryer_label",
+    srcs = ["polydryer_label.scad"],
+    deps = ["//lib/geometry/cube:rounded_cube"],
+)
